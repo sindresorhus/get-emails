@@ -1,0 +1,46 @@
+{
+  "name": "get-emails",
+  "version": "0.0.0",
+  "description": "Get all email addresses in a string",
+  "license": "MIT",
+  "repository": "sindresorhus/get-emails",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "http://sindresorhus.com"
+  },
+  "bin": {
+    "get-emails": "cli.js"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    "bin",
+    "get",
+    "extract",
+    "find",
+    "scrape",
+    "text",
+    "string",
+    "email",
+    "address"
+  ],
+  "dependencies": {
+    "array-uniq": "^1.0.0",
+    "email-regex": "^1.0.0",
+    "get-stdin": "^3.0.0"
+  },
+  "devDependencies": {
+    "ava": "0.0.4"
+  }
+}
