@@ -34,8 +34,8 @@ $ npm install --global get-emails
 $ get-emails --help
 
   Usage
-    get-emails <file>
-    cat <file> | get-emails
+    $ get-emails <file>
+    $ cat <file> | get-emails
 ```
 
 

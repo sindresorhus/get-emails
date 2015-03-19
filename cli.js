@@ -2,43 +2,28 @@
 'use strict';
 var fs = require('fs');
 var stdin = require('get-stdin');
-var pkg = require('./package.json');
+var meow = require('meow');
 var getEmails = require('./');
-var argv = process.argv.slice(2);
-var input = argv[0];
 
-function help() {
-	console.log([
-		'',
-		'  ' + pkg.description,
-		'',
-		'  Usage',
-		'    get-emails <file>',
-		'    cat <file> | get-emails'
-	].join('\n'));
-}
+var cli = meow({
+	help: [
+		'Usage',
+		'  $ get-emails <file>',
+		'  $ cat <file> | get-emails'
+	].join('\n')
+});
 
 function init(data) {
 	console.log(getEmails(data).join('\n'));
 }
 
-if (argv.indexOf('--help') !== -1) {
-	help();
-	return;
-}
-
-if (argv.indexOf('--version') !== -1) {
-	console.log(pkg.version);
-	return;
-}
-
 if (process.stdin.isTTY) {
-	if (!input) {
-		help();
-		return;
+	if (!cli.input[0]) {
+		console.error('File required');
+		process.exit(1);
 	}
 
-	init(fs.readFileSync(input, 'utf8'));
+	init(fs.readFileSync(cli.input[0], 'utf8'));
 } else {
 	stdin(init);
 }
