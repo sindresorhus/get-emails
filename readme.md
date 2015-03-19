@@ -7,7 +7,7 @@ The returned list is uniquified.
 
 ## Install
 
-```sh
+```
 $ npm install --save get-emails
 ```
 
@@ -26,7 +26,7 @@ getEmails(text);
 
 ## CLI
 
-```sh
+```
 $ npm install --global get-emails
 ```
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 var fs = require('fs');
-var stdin = require('get-stdin');
+var getStdin = require('get-stdin');
 var meow = require('meow');
 var getEmails = require('./');
 
@@ -25,5 +25,5 @@ if (process.stdin.isTTY) {
 
 	init(fs.readFileSync(cli.input[0], 'utf8'));
 } else {
-	stdin(init);
+	getStdin(init);
 }
