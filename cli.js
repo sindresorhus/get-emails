@@ -10,7 +10,7 @@ var cli = meow({
 		'Usage',
 		'  $ get-emails <file>',
 		'  $ cat <file> | get-emails'
-	].join('\n')
+	]
 });
 
 function init(data) {
