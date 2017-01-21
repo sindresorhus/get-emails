@@ -2,8 +2,6 @@
 
 > Get all email addresses in a string
 
-The returned list is uniquified.
-
 
 ## Install
 
@@ -15,30 +13,19 @@ $ npm install --save get-emails
 ## Usage
 
 ```js
-var getEmails = require('get-emails');
+const getEmails = require('get-emails');
 
-var text = 'Lorem ipsum dolor sit amet, sindresorhus@gmail.com consectetuer unicorn@rainbow.cake elit.';
+const text = 'Lorem ipsum dolor, sindresorhus@gmail.com consectetuer unicorn@rainbow.cake elit.';
 
 getEmails(text);
-//=> ['sindresorhus@gmail.com', 'unicorn@rainbow.cake']
+//=> Set {'sindresorhus@gmail.com', 'unicorn@rainbow.cake'}
 ```
 
+## Related
 
-## CLI
-
-```
-$ npm install --global get-emails
-```
-
-```
-$ get-emails --help
-
-  Usage
-    $ get-emails <file>
-    $ cat <file> | get-emails
-```
+- [get-emails-cli](https://github.com/sindresorhus/get-emails-cli) - CLI for this module
 
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)

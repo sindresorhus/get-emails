@@ -9,21 +9,16 @@
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com"
   },
-  "bin": "cli.js",
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "scripts": {
-    "test": "node test.js"
+    "test": "xo && ava"
   },
   "files": [
-    "index.js",
-    "cli.js"
+    "index.js"
   ],
   "keywords": [
-    "cli-app",
-    "cli",
-    "bin",
     "get",
     "extract",
     "find",
@@ -31,15 +26,14 @@
     "text",
     "string",
     "email",
-    "address"
+    "address",
+    "emails"
   ],
   "dependencies": {
-    "array-uniq": "^1.0.0",
-    "email-regex": "^1.0.0",
-    "get-stdin": "^4.0.1",
-    "meow": "^3.3.0"
+    "email-regex": "^1.0.0"
   },
   "devDependencies": {
-    "ava": "0.0.4"
+    "ava": "*",
+    "xo": "*"
   }
 }
