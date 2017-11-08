@@ -1,39 +1,39 @@
 {
-  "name": "get-emails",
-  "version": "2.0.0",
-  "description": "Get all email addresses in a string",
-  "license": "MIT",
-  "repository": "sindresorhus/get-emails",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "get",
-    "extract",
-    "find",
-    "scrape",
-    "text",
-    "string",
-    "email",
-    "address",
-    "emails"
-  ],
-  "dependencies": {
-    "email-regex": "^2.0.0"
-  },
-  "devDependencies": {
-    "ava": "*",
-    "xo": "*"
-  }
+	"name": "get-emails",
+	"version": "2.0.0",
+	"description": "Get all email addresses in a string",
+	"license": "MIT",
+	"repository": "sindresorhus/get-emails",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"get",
+		"extract",
+		"find",
+		"scrape",
+		"text",
+		"string",
+		"email",
+		"address",
+		"emails"
+	],
+	"dependencies": {
+		"email-regex": "^2.0.0"
+	},
+	"devDependencies": {
+		"ava": "*",
+		"xo": "*"
+	}
 }

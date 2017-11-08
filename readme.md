@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save get-emails
+$ npm install get-emails
 ```
 
 
@@ -20,6 +20,7 @@ const text = 'Lorem ipsum dolor, sindresorhus@gmail.com consectetuer unicorn@rai
 getEmails(text);
 //=> Set {'sindresorhus@gmail.com', 'unicorn@rainbow.cake'}
 ```
+
 
 ## Related
 

@@ -20,7 +20,7 @@ test('main', t => {
 
 test('matches correctly', t => {
 	const fixture = `
-		foo bar mailto:sindresorhus.com unicorn
+		foo bar mailto:sindresorhus@gmail.com unicorn
 	`;
 
 	t.deepEqual(
