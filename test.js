@@ -1,13 +1,10 @@
 import fs from 'fs';
 import test from 'ava';
-import m from '.';
-
-// Fix Babel on Node.js 4
-const Set = global.Set;
+import getEmails from '.';
 
 test('main', t => {
 	t.deepEqual(
-		m(fs.readFileSync('fixture.txt', 'utf8')),
+		getEmails(fs.readFileSync('fixture.txt', 'utf8')),
 		new Set([
 			'sindresorhus@gmail.com',
 			'foo@bar.co.uk',
@@ -24,7 +21,7 @@ test('matches correctly', t => {
 	`;
 
 	t.deepEqual(
-		m(fixture),
+		getEmails(fixture),
 		new Set([
 			'sindresorhus@gmail.com'
 		])
