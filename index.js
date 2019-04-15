@@ -1,7 +1,7 @@
 'use strict';
 const emailRegex = require('email-regex');
 
-module.exports = text => {
-	const emails = text.match(emailRegex());
-	return new Set(emails ? emails.map(x => x.trim()) : []);
+module.exports = string => {
+	const emails = string.match(emailRegex());
+	return new Set(emails ? emails.map(email => email.trim()) : []);
 };

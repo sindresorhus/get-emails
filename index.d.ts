@@ -11,6 +11,6 @@ getEmails(text);
 //=> Set {'sindresorhus@gmail.com', 'unicorn@rainbow.cake'}
 ```
 */
-declare function getEmails(text: string): Set<string>;
+declare function getEmails(string: string): Set<string>;
 
 export = getEmails;
