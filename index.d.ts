@@ -1,4 +1,3 @@
-
 /**
 Get all email addresses in a string.
 
