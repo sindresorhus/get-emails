@@ -1,4 +1,4 @@
-# get-emails [![Build Status](https://travis-ci.org/sindresorhus/get-emails.svg?branch=master)](https://travis-ci.org/sindresorhus/get-emails)
+# get-emails
 
 > Get all email addresses in a string
 
