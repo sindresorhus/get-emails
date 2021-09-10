@@ -1,6 +1,6 @@
 {
 	"name": "get-emails",
-	"version": "3.0.0",
+	"version": "4.0.0",
 	"description": "Get all email addresses in a string",
 	"license": "MIT",
 	"repository": "sindresorhus/get-emails",
