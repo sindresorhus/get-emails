@@ -1,6 +1,6 @@
-import fs from 'fs';
+import fs from 'node:fs';
 import test from 'ava';
-import getEmails from '.';
+import getEmails from './index.js';
 
 test('main', t => {
 	t.deepEqual(
@@ -10,8 +10,8 @@ test('main', t => {
 			'foo@bar.co.uk',
 			'unicorn@unicorn.unicorn',
 			'cake@cake.cake',
-			'pony@power.com'
-		])
+			'pony@power.com',
+		]),
 	);
 });
 
@@ -23,7 +23,7 @@ test('matches correctly', t => {
 	t.deepEqual(
 		getEmails(fixture),
 		new Set([
-			'sindresorhus@gmail.com'
-		])
+			'sindresorhus@gmail.com',
+		]),
 	);
 });
