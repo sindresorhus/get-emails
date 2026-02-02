@@ -42,6 +42,24 @@ test('does not match invalid emails in HTML', t => {
 	);
 });
 
+test('handles comma-separated emails', t => {
+	t.deepEqual(
+		getEmails('grandma@kiss.com,sister@kiss.com'),
+		new Set([
+			'grandma@kiss.com',
+			'sister@kiss.com',
+		]),
+	);
+
+	t.deepEqual(
+		getEmails('grandma@kiss.com, sister@kiss.com'),
+		new Set([
+			'grandma@kiss.com',
+			'sister@kiss.com',
+		]),
+	);
+});
+
 test('does not match emails with invalid characters', t => {
 	t.deepEqual(
 		getEmails('"foo"@bar.com'),
