@@ -27,3 +27,24 @@ test('matches correctly', t => {
 		]),
 	);
 });
+
+test('does not match invalid emails in HTML', t => {
+	t.deepEqual(
+		getEmails('<span class="name">@VEKKING</span>'),
+		new Set(),
+	);
+
+	t.deepEqual(
+		getEmails('foo x@y.com bar'),
+		new Set([
+			'x@y.com',
+		]),
+	);
+});
+
+test('does not match emails with invalid characters', t => {
+	t.deepEqual(
+		getEmails('"foo"@bar.com'),
+		new Set(),
+	);
+});
